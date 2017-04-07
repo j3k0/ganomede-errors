@@ -1,0 +1,8 @@
+tests/
+.eslintrc
+.gitignore
+circle.yml
+docker-compose.yml
+Dockerfile
+*.sublime-*
+setenv

@@ -1,0 +1,8 @@
+env:
+  mocha: true
+
+globals:
+  td: false
+  assert: false
+  expect: false
+  __ganomede_test: false

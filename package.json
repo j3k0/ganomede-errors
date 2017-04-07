@@ -1,0 +1,35 @@
+{
+  "name": "ganomede-errors",
+  "version": "1.0.0",
+  "description": "Errors and handler functions for Ganomede services",
+  "main": "index.js",
+  "scripts": {
+    "test": "LOG_LEVEL=FATAL mocha --bail --no-exit --throw-deprecation tests/helper.js 'tests/**/*.test.js'",
+    "testw": "nodemon --watch index.js --watch tests/ --exec 'npm test'",
+    "coverage": "LOG_LEVEL=FATAL istanbul cover _mocha -- --bail --no-exit --throw-deprecation tests/helper.js 'tests/**/*.test.js' && istanbul report",
+    "lint": "eslint tests/ index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j3k0/ganomede-errors.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/j3k0/ganomede-errors/issues"
+  },
+  "homepage": "https://github.com/j3k0/ganomede-errors#readme",
+  "devDependencies": {
+    "bunyan": "^1.8.10",
+    "chai": "^3.5.0",
+    "eslint": "^3.8.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.1.2",
+    "nodemon": "^1.11.0",
+    "testdouble": "^2.1.2"
+  },
+  "dependencies": {
+    "restify-errors": "^4.3.0"
+  }
+}
